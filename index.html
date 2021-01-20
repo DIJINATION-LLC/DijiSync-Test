@@ -462,22 +462,26 @@
     <img src="./images/processimg3.png" style="padding: 0px 170px;" alt="" class="wow fadeInUp" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s;">      	 
   </div>
 </section>
- <!-- middle -->
-  <section id="middle" class="middle py-5">
-    <div class="container py-lg-5 py-md-4 py-3">
-      <div class="welcome-left text-center" data-aos="zoom-out">
-        <span class="sub-title mb-2">Join Now</span>
-        <h3 class="title-w3l">Take advantage of a complimentary practice Billing Audit? Which can help you identify your current pain points.</h3>
-        <a href="#ContactUs" class="button button-primary button-md mt-sm-5 mt-4 mr-2">Get Started</a>
-        <a href="#ContactUs" class="button button-primary button-md mt-sm-5 mt-4">Join Now</a>
-      </div>
+
+<!-- middle -->
+<!-- <section id="middle" class="middle py-5">
+  <div class="container py-lg-5 py-md-4 py-3">
+    <div class="welcome-left text-center" data-aos="zoom-out">
+      <span class="sub-title mb-2">Join Now</span>
+      <h3 class="title-w3l">Take advantage of a complimentary practice Billing Audit? Which can help you identify your current pain points.</h3>
+      <a href="#ContactUs" class="button button-primary button-md mt-sm-5 mt-4 mr-2">Get Started</a>
+      <a href="#ContactUs" class="button button-primary button-md mt-sm-5 mt-4">Join Now</a>
     </div>
-  </section>
-  <!-- //middle -->
+  </div>
+</section> -->
+<!-- //middle -->
+
 <section class="section cta-section bg-gray-lighten" id="Insight" >
   <h2 class="creative-title text-center"> <span>DEEP DIVE - DJ 360</span></h2>
-  <div class="container-fluid">
+  <div class="container-fluid text-center">
     <p class="text-center" style="padding:20px 150px;">	We understand that each practice is unique which is why our process is to first diagnose and then recommend the right solutions for your practice. In order to achieve this goal we will be analyzing the following components:</p>
+
+    <a href="#myModal" data-toggle="modal" data-target="#myModal" class="button button-primary button-md mt-3">Join Now</a>
 
   </div>
   <div class="container p-5">
@@ -485,96 +489,171 @@
  </div>
 
 
-</section>
-<!-- // Insight -->
-<!--CTA section-->
-<section class="section contact" id="ContactUs">
-  <div class="container">
-    <div class="row">
-      <div class="col-xl-5 col-sm-10  col-md-8 col-lg-6 wow  fadeInUp" data-wow-delay=".2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
-
-      </div>
-      <div class="col-xl-5 col-sm-10 col-lg-6 col-md-8 wow fadeInUp  " data-wow-delay=".2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
-        <h1 class="text-center">CONTACT US</h1>
-
-        <form class="rd-form rd-mailform rd-form-centered" data-form-output="form-output-global" data-form-type="contact" method="POST" action="mail.php" novalidate="novalidate">
-          <div class="form-wrap">
-           <div class="row">
-            <div class="col-lg-6">
-              <input class="form-input form-control-has-validation" placeholder="First Name" id="contact-fname" type="text" name="fname" data-constraints="@Required">
+ <div class="modal fade left" id="myModal"> 
+  <div class="modal-dialog"> 
+    <div class="modal-content"> 
+      <div class="modal-header"> 
+        <h3 class="pull-left no-margin">Contact Form</h3>
+        <button type="button" class="close" data-dismiss="modal" title="Close"><span class="glyphicon glyphicon-remove"></span>
+        </button> 
+      </div> 
+      <div class="modal-body">
+        <form class="form-horizontal" role="form" method="post" action="form_to_email_script.php "> 
+          <span class="required">* Required</span> 
+          <div class="form-group"> 
+            <label for="name" class="col-sm-3 control-label">
+              <span class="required">*</span> Name:</label> 
+              <div class="col-sm-9"> 
+                <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required> 
+              </div> 
             </div>
-            <div class="col-lg-6">
-              <input class="form-input form-control-has-validation mblmt3" placeholder="Last Name" id="contact-lname" type="text" name="lname" data-constraints="@Required">
+            <div class="form-group"> 
+              <label for="name" class="col-sm-6 control-label">
+                <span class="required">*</span> Practice Name:</label> 
+                <div class="col-sm-9"> 
+                  <input type="text" class="form-control" id="pracname" name="pracname" placeholder="First & Last" required> 
+                </div> 
+              </div>
+              <div class="form-group"> 
+                <label for="name" class="col-sm-6 control-label">
+                  <span class="required">*</span> Practice Address:</label> 
+                  <div class="col-sm-9"> 
+                    <input type="text" class="form-control" id="address" name="address" placeholder="First & Last" required> 
+                  </div> 
+                </div>
+                <div class="form-group"> 
+                  <label for="email" class="col-sm-6 control-label">
+                    <span class="required">*</span> Phone Number: </label> 
+                    <div class="col-sm-9"> 
+                      <input type="email" class="form-control" id="phone" name="phone" placeholder="+1-XXX-XXX-XXXX" required> 
+                    </div> 
+                  </div> 
+                  <div class="form-group"> 
+                    <label for="email" class="col-sm-3 control-label">
+                      <span class="required">*</span> Email: </label> 
+                      <div class="col-sm-9"> 
+                        <input type="email" class="form-control" id="email" name="email" placeholder="you@domain.com" required> 
+                      </div> 
+                    </div> 
+                    <div class="form-group"> 
+                      <label for="message" class="col-sm-6 control-label">
+                        <span class="required">*</span> Description:</label> 
+                        <div class="col-sm-9"> 
+                          <textarea name="message" rows="4" required class="form-control" id="message" placeholder="Comments"></textarea> 
+                        </div> 
+                      </div>
+                      <div class="form-group"> 
+                        <div class="col-sm-offset-3 col-sm-6 col-sm-offset-3"> 
+                          <button type="submit" id="submit" name="submit" class="button button-primary button-sm">SUBMIT</button> 
+                        </div> 
+                      </div>
+                    </form>
+
+                  </div>
+                  <div class="modal-footer"> 
+                    <div class="col-xs-10 pull-left text-left text-muted"> 
+                      <small><strong>Privacy Policy:</strong>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit. 
+                        Mauris vitae libero lacus, vel hendrerit nisi! Maecenas quis 
+                        velit nisl, volutpat viverra felis. Vestibulum luctus mauris 
+                      sed sem dapibus luctus.</small> 
+                    </div> 
+                    <button class="btn-sm close" type="button" data-dismiss="modal">Close</button> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>
+
+          </section>
+          <!-- // Insight -->
+          <!--CTA section-->
+          <section class="section contact" id="ContactUs">
+            <div class="container">
+              <div class="row">
+                <div class="col-xl-5 col-sm-10  col-md-8 col-lg-6 wow  fadeInUp" data-wow-delay=".2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
+
+                </div>
+                <div class="col-xl-5 col-sm-10 col-lg-6 col-md-8 wow fadeInUp  " data-wow-delay=".2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
+                  <h1 class="text-center">CONTACT US</h1>
+
+                  <form class="rd-form rd-mailform rd-form-centered" data-form-output="form-output-global" data-form-type="contact" method="POST" action="mail.php" novalidate="novalidate">
+                    <div class="form-wrap">
+                     <div class="row">
+                      <div class="col-lg-6">
+                        <input class="form-input form-control-has-validation" placeholder="First Name" id="contact-fname" type="text" name="fname" data-constraints="@Required">
+                      </div>
+                      <div class="col-lg-6">
+                        <input class="form-input form-control-has-validation mblmt3" placeholder="Last Name" id="contact-lname" type="text" name="lname" data-constraints="@Required">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-wrap">
+                    <input class="form-input form-control-has-validation" id="contact-email" type="email" name="email" data-constraints="@Email @Required"><span class="form-validation"></span>
+                    <label class="form-label rd-input-label" for="contact-email">E-mail</label>
+                  </div>
+                  <div class="form-wrap">
+                    <input class="form-input form-control-has-validation" id="contact-subject" type="text" name="subject" data-constraints="@Required"><span class="form-validation"></span>
+                    <label class="form-label rd-input-label" for="contact-subject">Subject</label>
+                  </div>
+                  <div class="form-wrap">
+                    <input class="form-input form-control-has-validation" id="contact-message" type="text" name="message" data-constraints=""><span class="form-validation"></span>
+                    <label class="form-label rd-input-label" for="contact-message">Message</label>
+                  </div>
+                  <button class="button button-primary button-md" name="send " value="send" type="submit">SUBMIT</button>
+                </form>
+              </div>            
             </div>
           </div>
-        </div>
-        <div class="form-wrap">
-          <input class="form-input form-control-has-validation" id="contact-email" type="email" name="email" data-constraints="@Email @Required"><span class="form-validation"></span>
-          <label class="form-label rd-input-label" for="contact-email">E-mail</label>
-        </div>
-        <div class="form-wrap">
-          <input class="form-input form-control-has-validation" id="contact-subject" type="text" name="subject" data-constraints="@Required"><span class="form-validation"></span>
-          <label class="form-label rd-input-label" for="contact-subject">Subject</label>
-        </div>
-        <div class="form-wrap">
-          <input class="form-input form-control-has-validation" id="contact-message" type="text" name="message" data-constraints=""><span class="form-validation"></span>
-          <label class="form-label rd-input-label" for="contact-message">Message</label>
-        </div>
-        <button class="button button-primary button-md" name="send " value="send" type="submit">SUBMIT</button>
-      </form>
-    </div>            
-  </div>
-</div>
-</section>
+        </section>
 
-<footer class="section footer-classic context-light">
-  <div class="container">
-    <div class="row row-30 justify-content-center">
-      <div class="col-md-4 col-sm-6"><a class="brand" href="#"><img src="./Home_files/logo-default-145x38.png" alt="" width="145" height="38"></a>
-        <ul>
-          <li>Copyright © 2021 DijiSync. All rights reserved </li>
-        </ul>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <h6>Address</h6>
-        <ul>
-          <li> DijiSync &mdash; HCS</li>
-          <li> 2591 Dallas Parkway</li>
-          <li> Frisco TX, 75034</li>
+        <footer class="section footer-classic context-light">
+          <div class="container">
+            <div class="row row-30 justify-content-center">
+              <div class="col-md-4 col-sm-6"><a class="brand" href="#"><img src="./Home_files/logo-default-145x38.png" alt="" width="145" height="38"></a>
+                <ul>
+                  <li>Copyright © 2021 DijiSync. All rights reserved </li>
+                </ul>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <h6>Address</h6>
+                <ul>
+                  <li> DijiSync &mdash; HCS</li>
+                  <li> 2591 Dallas Parkway</li>
+                  <li> Frisco TX, 75034</li>
 
-        </ul>
+                </ul>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="centered-content">
+                  <h6>get in touch</h6>
+                  <ul class="contact-links">
+                    <li><span>Phone</span><a href="tel:+1 (800) 552 2975">+1 (800) 552 2975</a></li>
+                    <li><span>E-Mail</span><a href="mailto:support@dijisync.com">support@dijisync.com</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="devider">
+            <hr>
+          </div>
+          <div class="container">
+            <div class="row row-30 align-items-center justify-content-center flex-column-reverse flex-md-row">
+              <div class="col-12 col-md-12">
+                <p class="rights"><span>©&nbsp; </span><span class="copyright-year">2020</span><span>&nbsp;</span><span><a href="index.html">DijiSync &mdash; Healhcare Solutions</span><span>.&nbsp;</span></a></span></p>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="centered-content">
-          <h6>get in touch</h6>
-          <ul class="contact-links">
-            <li><span>Phone</span><a href="tel:+1 (855) 373 5584">+1 (855) 373 5584</a></li>
-            <li><span>E-Mail</span><a href="mailto:support@dijisync.com">support@dijisync.com</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="devider">
-    <hr>
-  </div>
-  <div class="container">
-    <div class="row row-30 align-items-center justify-content-center flex-column-reverse flex-md-row">
-      <div class="col-12 col-md-12">
-        <p class="rights"><span>©&nbsp; </span><span class="copyright-year">2020</span><span>&nbsp;</span><span><a href="index.html">DijiSync &mdash; Healhcare Solutions</span><span>.&nbsp;</span></a></span></p>
-      </div>
-    </div>
-  </div>
-</footer>
-</div>
-<div class="snackbars" id="form-output-global"></div>
-<script src="./Home_files/core.min.js.download"></script>
-<script src="./Home_files/script.js.download"></script>
-<script type="text/javascript" async="" src="./Home_files/ec.js.download"></script>
-<script type="text/javascript" async="" src="./Home_files/analytics.js.download"></script>
-<script async="" src="./Home_files/gtm.js.download"></script>
-<script src="./Home_files/3ts2ksMwXvKRuG480KNifJ2_JNM.js.download"></script>
-<script src="./Home_files/4o300efCt-CXoq1JEC-sVReFz48.js.download"></script>
+      <div class="snackbars" id="form-output-global"></div>
+      <script src="./Home_files/core.min.js.download"></script>
+      <script src="./Home_files/script.js.download"></script>
+      <script type="text/javascript" async="" src="./Home_files/ec.js.download"></script>
+      <script type="text/javascript" async="" src="./Home_files/analytics.js.download"></script>
+      <script async="" src="./Home_files/gtm.js.download"></script>
+      <script src="./Home_files/3ts2ksMwXvKRuG480KNifJ2_JNM.js.download"></script>
+      <script src="./Home_files/4o300efCt-CXoq1JEC-sVReFz48.js.download"></script>
 
-</body>
-</html>
+    </body>
+    </html>
